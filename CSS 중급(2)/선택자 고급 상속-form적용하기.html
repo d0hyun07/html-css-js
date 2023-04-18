@@ -59,10 +59,10 @@
             padding: 5px;
             width: 200px;
         }
-        #signup input{
-            border: none;
+        #signup input[required]{
+            border: 1px solid red;
         }
-        #signup input{
+        #signup input[readonly]{
             border: none;
         }
         #signup button:hover{
@@ -103,11 +103,11 @@
                     <input id="fullname" name="fullname" type="text" required autocomplete="on">
                 </li>
                 <li>
-                    <label for="email">이름</label>
+                    <label for="email">이메일</label>
                     <input id="email" name="email" type="email" required autocomplete="off">
                 </li>
                 <li>
-                    <label for="tel">이름</label>
+                    <label for="tel">전화번호</label>
                     <input id="tel" name="tel" type="tel" required autocomplete="off">
                 </li>
             </ul>
