@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>turn into other color</title>
+    <style>
+        body{text-align: center;}
+        #first{
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first">강도현</h1>
+    <h1 id="second">집가고 싶다</h1>
+    <h1 id="last">3일 뒤면 집간다 ㄴㅇㅅ</h1>
+    <p>위 텍스트를 클릭해보세요!</p>
+    <script>
+        var get1 = document.querySelector("#first");
+        get1.onclick = function(){
+            get1.style.color = "red";
+        }
+
+        var get2 = document.querySelector("#second");
+        get2.onclick = function(){
+            get2.style.color = "yellow";
+        }
+
+        var get3 = document.querySelector("#last");
+        get.onmouseover = function(){
+            get3.style.color = "green";
+        }
+    </script>
+</body>
+</html>
