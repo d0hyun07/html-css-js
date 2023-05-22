@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <h2>JavaScript 템플릿 문자열</h2>
+    <p>템플릿 문자열은 문자열 내에 변수와 표현식을 허용한다.</p>
+    <p id="demo"></p>
+    <script>
+        let header = '장보기목록';
+        let tags = ["사과", "배", "귤","포도","복숭아","딸기","산딸기","망고","수박","멜론"];
+        let html = `<h2>${header}</h2><ul>`;
+        for(const item of tags){
+            html += `<li>${item}</li>`; //배열내의 요소(item)를 한줄씩 추가
+        }
+            html += '</ul>';
+            document.getElementById("demo").innerHTML = html;
+    </script>
+</body>
+</html>
