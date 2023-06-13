@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .blue {
+            color: blue;
+        }
+        .red {
+            color: red;
+        }
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+		<h1 id="text" class="blue">지금 우리 학교는</h1>
+		<p>위 텍스트를 클릭해보세요</p>
+		
+
+    <script>
+        var textElement = document.getElementById("text");
+
+        textElement.addEventListener("click", function() {
+            if (textElement.classList.contains("blue")) {
+                textElement.classList.remove("blue");
+                textElement.classList.add("red");
+            } else {
+                textElement.classList.remove("red");
+                textElement.classList.add("blue");
+            }
+        });
+    </script>
+</body>
+</html>
